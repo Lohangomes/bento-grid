@@ -1,0 +1,181 @@
+.container-main {
+  display: grid;
+  grid-template-columns: repeat(4 , 250px) ;
+  grid-template-rows: 300px 100px 150px 250px;
+  grid-template-areas:
+    "create-post Social-Media Social-Media Schedule"
+    "create-post Manage-multiple Maintain Schedule"
+    "content-using-AI Manage-multiple Maintain Schedule"
+    "content-using-AI faster-audience Grow-followers Grow-followers";
+  justify-content: center;
+
+  gap: 2rem;
+}
+
+section {
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.048);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.create-post {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 2rem;
+  background-color: var(--Yellow-100);
+  grid-area: create-post;
+}
+
+.create-post span {
+  color: var(--Purple-500);
+}
+
+.create-post p {
+  font-size: 3.6rem;
+}
+
+.create-post img {
+  margin-top: 2rem;
+  cursor: pointer;
+  width: 100%;
+  max-width: 100%;
+}
+
+.Social-Media {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--Purple-500);
+  grid-area: Social-Media;
+  text-align: center;
+}
+
+.Social-Media h2 {
+  color: var(--White);
+  font-size: 5.4rem;
+  width: 42rem;
+  line-height: 1;
+  font-weight: 400;
+}
+
+.Social-Media span {
+  color: var(--Yellow-500);
+}
+
+.Social-Media span:nth-child(3) {
+  color: var(--White);
+}
+
+.Social-Media img {
+  margin-block: 1rem;
+  max-width: 15rem;
+}
+
+.Schedule {
+  display: flex;
+  flex-flow: column;
+  gap: 2.0rem;
+  overflow: hidden;
+  background-color: var(--Purple-100);
+  grid-area: Schedule;
+  padding: 3.0rem 2.0rem 0 3.0rem;
+
+}
+
+.Schedule img {
+  width: 35.0rem;
+
+}
+
+
+.Schedule span {
+
+  font-size: 3.0rem;
+}
+
+
+
+.content-using-AI {
+  padding: 3rem;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 3rem;
+  background-color: var(--Yellow-500);
+  grid-area: content-using-AI;
+}
+
+.content-using-AI span {
+  font-size: 3.6rem;
+  font-weight: 500;
+}
+
+.faster-audience{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  padding: 3rem;
+  background-color: rgb(255, 255, 255);
+  grid-area: faster-audience;
+}
+
+.faster-audience span:first-child {
+  font-size: 5rem;
+ 
+}
+
+.faster-audience span:nth-child(2){
+
+font-size: 1.5rem;
+}
+
+.Manage-multiple {
+  padding: 2.0rem;
+  background-color: var(--White);
+  grid-area: Manage-multiple;
+}
+
+.Manage-multiple img {
+  width: 31.0rem;
+}
+
+.Manage-multiple p {
+  font-size: 3.3rem;
+}
+
+.Maintain {
+  background-color: var(--Yellow-500);
+  grid-area: Maintain;
+  padding: 2rem;
+}
+
+.Maintain img {
+  width: 20.0rem;
+}
+
+.Maintain p {
+  font-size: 3.6rem;
+  padding-bottom: 2.5rem;
+}
+
+.Grow-followers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Purple-500);
+  grid-area: Grow-followers;
+  padding: 2rem;
+}
+
+.Grow-followers img {
+  width: 50%;
+}
+
+.Grow-followers p {
+  font-size: 3.4rem;
+  color: white;
+}
